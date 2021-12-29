@@ -412,7 +412,7 @@ public class LanguageAwareCompletionProvider extends CompletionProviderBase
 	 * @return The tool tip text, or <code>null</code> if none.
 	 */
 	@Override
-	public String getToolTipText(RTextArea textArea, MouseEvent e) {
+	synchronized public String getToolTipText(RTextArea textArea, MouseEvent e) {
 
 		String tip = null;
 
